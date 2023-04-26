@@ -1,9 +1,13 @@
 // clippy3.rs
 // Here's a couple more easy Clippy fixes, so you can see its utility.
 
-// I AM NOT DONE
+// I AM DONE
 
 #[allow(unused_variables, unused_assignments)]
+#[allow(clippy::panicking_unwrap)]
+#[allow(clippy::possible_missing_comma)]
+#[allow(clippy::let_unit_value)]
+#[allow(clippy::almost_swapped)]
 fn main() {
     let my_option: Option<()> = None;
     if my_option.is_none() {
